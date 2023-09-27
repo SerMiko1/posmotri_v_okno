@@ -230,7 +230,6 @@ input[type="checkbox"]:checked~.search-form__pseudo-checkbox::before {
   object-position: center;
   object-fit: cover;
   inset: 0;
-  position: absolute;
 }
 
 .content__list {
