@@ -1,0 +1,361 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  inline-size: 1200px;
+  block-size: 100%;
+  padding: 133px 30px;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  width: 1140px;
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin: auto;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__details {
+  padding-block-start: 5px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  width: 394px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.content__card-link:active {
+  background: #545050;
+}
+
+.content__card-link_current {
+  background: #545050;
+}
+
+.content__video-card-title {
+  color: #FFF;
+  font-family: 'Oswald';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+  margin-block-start: 3px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__label-text {
+  color: #fff;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form__label-town:hover {
+  text-decoration: none;
+}
+
+.search-form__textfield {
+  min-width: 225px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__textfield:hover {
+  text-decoration: none;
+  cursor: text;
+}
+
+.search-form__textfield:active {
+  border: none;
+  outline: 1px solid #fff;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: fit-content;
+  border: none;
+  gap: 5px;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.search-form__pseudo-checkbox:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked~.search-form__pseudo-checkbox::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background-color: #fff;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Oswald';
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  align-self: center;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  inset: 0;
+  position: absolute;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow: auto scroll;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  width: 394px;
+}
+
+.content__card-link {
+  display: block;
+  margin: 2px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 16.2px;
+  text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103;
+  flex-shrink: 0;
+  object-position: center;
+  object-fit: cover;
+}
+
+.search-form__submit-button {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  width: 194px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background-color: #1b1919;
+  color: #fff;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.search-form__submit-button:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+.search-form__submit-button:active {
+  background: #545050;
+}
+
+.more-button {
+  width: fit-content;
+  background-color: #1b1919;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  width: 399px;
+  height: 34px;
+  gap: 10px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.more-button:active {
+  background: #545050;
+}
+
+.more-button:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
