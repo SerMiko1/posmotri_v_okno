@@ -120,6 +120,11 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .search-form__textfield {
   min-width: 225px;
   border: none;
@@ -147,7 +152,6 @@ ol {
 
 .search-form__textfield:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .search-form__textfield:active {
@@ -321,15 +325,6 @@ input[type="checkbox"]:checked~.search-form__pseudo-checkbox::before {
 .more-button {
   width: 399px;
   height: 34px;
-}
-
-.more-button:active {
-  background: #545050;
-}
-
-.more-button:hover {
-  text-decoration-line: underline;
-  text-underline-offset: 3px;
 }
 
 .button:focus {
